@@ -126,6 +126,37 @@
         "Developed basic React/TypeScript UI for login, support request, and meeting room, and integrated with backend APIs"
       ]
     },
+    "sensorDashboard": {
+      "title": "Real-time Multi-modal Sensor Data Analytics Dashboard",
+      "desc": "A full-stack analytics platform designed to efficiently query and visualize large-scale multi-modal sensor data stored in PostgreSQL. The system ensures high data reliability through Python-based preprocessing and features a scalable infrastructure managed as code with Terraform on GCP.",
+      "features": [
+        "Node-specific Data Filtering: Allows users to select specific Node IDs to isolate and visualize data from individual sensor devices.",
+        "Customizable Time-range Queries: Features 'Quick Selection' buttons for preset intervals (Today, last 7 days, etc.) along with manual date-range pickers for flexible data exploration.",
+        "Sensor Value Range Search: Provides granular filtering capabilities by allowing users to define specific value ranges for metrics such as temperature, humidity, and illumination.",
+        "Multi-modal Data Visualization: Presents diverse sensor categories through intuitive charts and synchronized data tables for comprehensive monitoring.",
+        "Automated Data Preprocessing: Utilizes Python (Pandas) to normalize Node IDs and clean raw sensor records for consistent database integrity.",
+        "Secure Infrastructure Management: Implements Nginx reverse proxy with SSL encryption and domain-restricted CORS policies for safe cross-origin data communication.",
+        "Infrastructure as Code (IaC): Managed GCP resources including VM instances and firewall rules using Terraform for reproducible environments."
+      ],
+      "role": [
+        "Full-stack Development: Designed and implemented the RESTful API for complex data querying and the responsive dashboard UI.",
+        "DevOps & Infrastructure: Built and managed the automated deployment pipeline using Docker Compose, GitHub Actions, and Docker Hub.",
+        "Cloud Infrastructure Engineer: Provisioned and orchestrated cloud resources using Terraform to ensure infrastructure consistency."
+      ],
+      "contributions": [
+        "Architected efficient SQL queries and Express.js API endpoints to handle multi-conditional filtering (Node ID, time range, and sensor value ranges).",
+        "Enhanced user experience (UX) by implementing 'Quick Range' shortcut buttons for frequently used time intervals.",
+        "Developed a high-performance visualization dashboard using Next.js and TypeScript that reacts instantly to complex filter changes.",
+        "Provisioned GCP Compute Engine and network security groups via Terraform, eliminating manual configuration errors and ensuring 100% reproducibility.",
+        "Strengthened system security by refactoring CORS settings to restrict API access exclusively to the production domain via environment variables.",
+        "Integrated Certbot within a Docker container to automate SSL certificate issuance and 90-day renewal cycles."
+      ],
+      "troubleshooting": [
+        "Optimized database query performance for large datasets by implementing efficient indexing strategies and server-side filtering logic.",
+        "Resolved 'Mixed Content' and CORS blockers by configuring an Nginx reverse proxy to unify frontend and backend under a single SSL-secured domain.",
+        "Eliminated synchronization issues between the build image and production server by establishing a 'Pull-based' deployment flow via Docker Hub."
+      ]
+    },
     "approvalWeb": {
       "title": "Internal Electronic Approval Web System",
       "desc": "Extended the existing app-based electronic approval system to the web. Implemented document review and approval/rejection, attachment handling, leave applications, and user settings. Leveraged existing Java REST APIs, and developed the entire frontend solo using React (Next.js) and TypeScript.",
