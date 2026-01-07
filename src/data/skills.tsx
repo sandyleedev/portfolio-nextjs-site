@@ -29,9 +29,12 @@ import SonarqubeIcon from '@/components/icons/SonarqubeIcon'
 import SpringIcon from '@/components/icons/SpringIcon'
 import SwaggerIcon from '@/components/icons/SwaggerIcon'
 import TailwindIcon from '@/components/icons/TailwindIcon'
+import ExpressIcon from '@/components/icons/ExpressIcon'
+import GCPIcon from '@/components/icons/GCPIcon'
+import TerraformIcon from '@/components/icons/TerraformIcon'
 
 export const frontendSkills = [
-  { icon: <ReactIcon/>, name: 'React' },
+  { icon: <ReactIcon />, name: 'React' },
   { icon: <JavascriptIcon />, name: 'JavaScript' },
   { icon: <TypescriptIcon />, name: 'TypeScript' },
   { icon: <NextjsIcon />, name: 'Next.js' },
@@ -46,6 +49,7 @@ export const backendSkills = [
   { icon: <KotlinIcon />, name: 'Kotlin' },
   { icon: <PythonIcon />, name: 'Python' },
   { icon: <NodeJsIcon />, name: 'Node.js' },
+  { icon: <ExpressIcon />, name: 'Express' },
   { icon: <SpringIcon />, name: 'Spring' },
   { icon: <RedisIcon />, name: 'Redis' },
   { icon: <MysqlIcon />, name: 'Mysql' },
@@ -55,8 +59,10 @@ export const backendSkills = [
 
 export const cloudInfraSkills = [
   { icon: <AwsIcon />, name: 'AWS' },
+  { icon: <GCPIcon />, name: 'GCP' },
   { icon: <DockerIcon />, name: 'Docker' },
   { icon: <K8sIcon />, name: 'Kubernetes' },
+  { icon: <TerraformIcon />, name: 'Terraform' },
   { icon: <NginxIcon />, name: 'Nginx' },
   { icon: <LinuxIcon />, name: 'Linux' },
   { icon: <GradleIcon />, name: 'Gradle' },
